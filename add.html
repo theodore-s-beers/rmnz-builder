@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="bundle.min.css" />
+
+    <title>Add romanization examples</title>
+  </head>
+  <body class="mx-auto my-6 max-w-4xl bg-gray-50">
+    <h1 class="text-3xl mb-4">Add romanization examples</h1>
+
+    <div class="flex flex-col gap-y-1 max-w-xs">
+      <label for="word">Persian word</label>
+      <input
+        id="word"
+        dir="rtl"
+        lang="ar"
+        class="border border-gray-500 rounded px-3 py-1 mb-4 text-xl"
+      />
+
+      <label for="dmg">DMG romanization</label>
+      <input id="dmg" class="border border-gray-500 rounded px-2 py-1 mb-4" />
+
+      <label for="eir">EIr romanization</label>
+      <input id="eir" class="border border-gray-500 rounded px-2 py-1 mb-4" />
+
+      <label for="ijmes">IJMES romanization</label>
+      <input id="ijmes" class="border border-gray-500 rounded px-2 py-1 mb-4" />
+
+      <label for="loc">ALA-LC romanization</label>
+      <input id="loc" class="border border-gray-500 rounded px-2 py-1 mb-5" />
+
+      <button
+        id="btn"
+        class="rounded px-3 py-2 bg-sky-700 text-white max-w-fit"
+      >
+        Submit
+      </button>
+    </div>
+
+    <script src="bundle.min.js"></script>
+  </body>
+</html>
