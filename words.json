@@ -1,9 +1,9 @@
 {
   "محمد": {
-    "dmg": "Muḥammad",
-    "eir": "Moḥammad",
-    "ijmes": "Muḥammad",
-    "loc": "Muḥammad"
+    "dmg": "muḥammad",
+    "eir": "moḥammad",
+    "ijmes": "muḥammad",
+    "loc": "muḥammad"
   },
   "خانه": { "dmg": "ḫāna", "eir": "ḵāna", "ijmes": "khānih", "loc": "khānah" },
   "باغ": { "dmg": "bāġ", "eir": "bāḡ", "ijmes": "bāgh", "loc": "bāgh" },
@@ -23,5 +23,11 @@
   },
   "بابا": { "dmg": "bābā", "eir": "bābā", "ijmes": "bābā", "loc": "bābā" },
   "ملک": { "dmg": "malik", "eir": "malek", "ijmes": "malik", "loc": "malik" },
-  "سیاه": { "dmg": "siyāh", "eir": "siāh", "ijmes": "siyāh", "loc": "siyāh" }
+  "سیاه": { "dmg": "siyāh", "eir": "siāh", "ijmes": "siyāh", "loc": "siyāh" },
+  "مشهد": {
+    "dmg": "mašhad",
+    "eir": "mašhad",
+    "ijmes": "mashhad",
+    "loc": "mashhad"
+  }
 }
