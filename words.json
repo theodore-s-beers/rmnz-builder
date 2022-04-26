@@ -29,5 +29,27 @@
     "eir": "mašhad",
     "ijmes": "mashhad",
     "loc": "mashhad"
+  },
+  "سرو": { "dmg": "sarv", "eir": "sarv", "ijmes": "sarv", "loc": "sarv" },
+  "حُسن": { "dmg": "ḥusn", "eir": "ḥosn", "ijmes": "ḥusn", "loc": "ḥusn" },
+  "عشاق": {
+    "dmg": "ʿuššāq",
+    "eir": "ʿoššāq",
+    "ijmes": "ʿushshāq",
+    "loc": "ʿushshāq"
+  },
+  "لحظه": {
+    "dmg": "laḥẓa",
+    "eir": "laḥẓa",
+    "ijmes": "laḥẓih",
+    "loc": "laḥẓah"
+  },
+  "آرزو": { "dmg": "ārizū", "eir": "ārezu", "ijmes": "ārizū", "loc": "ārizū" },
+  "آتش": { "dmg": "ātaš", "eir": "ātaš", "ijmes": "ātash", "loc": "ātash" },
+  "میخانه": {
+    "dmg": "mayḫāna",
+    "eir": "meyḵāna",
+    "ijmes": "maykhānih",
+    "loc": "maykhānah"
   }
 }
