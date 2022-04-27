@@ -1,5 +1,6 @@
 const axios = require("axios").default;
 
+// Function to post word to server
 function addWord() {
   const word = document.getElementById("word").value;
   const dmg = document.getElementById("dmg").value;
@@ -8,10 +9,9 @@ function addWord() {
   const loc = document.getElementById("loc").value;
 
   axios
-    .post("http://localhost:3737/words", {
-      [word]: { dmg, eir, ijmes, loc },
-    })
+    .post("http://localhost:3737/words", { [word]: { dmg, eir, ijmes, loc } })
     .then(() => {
+      // Clear input fields if post succeeded
       document.querySelectorAll("input").forEach((element) => {
         element.value = "";
       });
@@ -19,13 +19,15 @@ function addWord() {
     })
     .catch((error) => {
       if (error.response) {
-        // Get HTTP error code
+        // Get HTTP error code, if available
         console.log(error.reponse.status);
       } else {
         console.log(error.message);
       }
     });
 }
+
+// Event handlers
 
 document.getElementById("btn").addEventListener("click", addWord);
 
