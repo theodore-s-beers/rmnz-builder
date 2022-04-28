@@ -34,7 +34,15 @@ app.post("/words", (req, res) => {
         fileObj[key] = postObj[key];
       }
 
-      const returnJson = JSON.stringify(fileObj);
+      // Sort object by key
+      // It's better to pay the cost of doing this now
+      const fileObjSorted = Object.fromEntries(
+        Object.entries(fileObj).sort(([key1], [key2]) =>
+          key1.localeCompare(key2)
+        )
+      );
+
+      const returnJson = JSON.stringify(fileObjSorted);
 
       // Write the updated object back to the file
       fs.writeFile("words.json", returnJson, (err) => {
@@ -50,5 +58,5 @@ app.post("/words", (req, res) => {
 
 // Listen on the above-specified port
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Listening on port ${port}`);
 });
