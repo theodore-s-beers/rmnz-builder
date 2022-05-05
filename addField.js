@@ -5,11 +5,12 @@ fs.readFile("playspace.json", (err, data) => {
 
   const fullObj = JSON.parse(data.toString());
 
-  // Add IJMES-D field to each word object
+  // Add IJMES-D property to each word object
   for (const key in fullObj) {
     const wordObj = fullObj[key];
 
-    wordObj.ijmesd = "TODO";
+    // Setting it equal to IJMES is a good starting point
+    wordObj.ijmesd = wordObj.ijmes;
 
     // Sort word object
     const wordObjSorted = Object.fromEntries(Object.entries(wordObj).sort());
@@ -18,11 +19,11 @@ fs.readFile("playspace.json", (err, data) => {
   }
 
   // Sort overall object
-  const fileObjSorted = Object.fromEntries(
+  const fullObjSorted = Object.fromEntries(
     Object.entries(fullObj).sort(([key1], [key2]) => key1.localeCompare(key2))
   );
 
-  const returnJson = JSON.stringify(fileObjSorted);
+  const returnJson = JSON.stringify(fullObjSorted);
 
   // Write the updated object back to the file
   fs.writeFile("playspace.json", returnJson, (err) => {
