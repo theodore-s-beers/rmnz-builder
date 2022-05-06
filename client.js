@@ -6,13 +6,16 @@ function addWord() {
   const dmg = document.getElementById("dmg").value.trim();
   const eir = document.getElementById("eir").value.trim();
   const ijmes = document.getElementById("ijmes").value.trim();
+  const ijmesD = document.getElementById("ijmes-d").value.trim();
   const loc = document.getElementById("loc").value.trim();
 
   // All fields must be filled
-  if (!word || !dmg || !eir || !ijmes || !loc) return;
+  if (!word || !dmg || !eir || !ijmes || !ijmesD || !loc) return;
 
   axios
-    .post("http://localhost:3737/words", { [word]: { dmg, eir, ijmes, loc } })
+    .post("http://localhost:3737/words", {
+      [word]: { dmg, eir, ijmes, ijmesD, loc },
+    })
     .then(() => {
       // Clear input fields if post succeeded
       document.querySelectorAll("input").forEach((element) => {

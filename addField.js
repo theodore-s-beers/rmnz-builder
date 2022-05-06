@@ -10,7 +10,7 @@ fs.readFile("playspace.json", (err, data) => {
     const wordObj = fullObj[key];
 
     // Setting it equal to IJMES is a good starting point
-    wordObj.ijmesd = wordObj.ijmes;
+    wordObj.ijmesD = wordObj.ijmes;
 
     // Sort word object
     const wordObjSorted = Object.fromEntries(Object.entries(wordObj).sort());
