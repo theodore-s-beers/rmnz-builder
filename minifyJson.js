@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-fs.readFile("playspace.json", (err, data) => {
+fs.readFile("words.json", (err, data) => {
   if (err) throw err;
 
   const fullObj = JSON.parse(data.toString());
@@ -8,7 +8,7 @@ fs.readFile("playspace.json", (err, data) => {
   const returnJson = JSON.stringify(fullObj);
 
   // Write minified object back to file
-  fs.writeFile("playspace.json", returnJson, (err) => {
+  fs.writeFile("words.json", returnJson, (err) => {
     if (err) throw err;
   });
 });
