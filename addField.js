@@ -5,12 +5,12 @@ fs.readFile("playspace.json", (err, data) => {
 
   const fullObj = JSON.parse(data.toString());
 
-  // Add IJMES-D property to each word object
+  // Add IS property to each word object
   for (const key in fullObj) {
     const wordObj = fullObj[key];
 
     // Setting it equal to IJMES is a good starting point
-    wordObj.ijmesD = wordObj.ijmes;
+    wordObj.is = wordObj.ijmes;
 
     // Sort word object
     const wordObjSorted = Object.fromEntries(Object.entries(wordObj).sort());
