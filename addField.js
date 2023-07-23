@@ -20,7 +20,7 @@ fs.readFile("playspace.json", (err, data) => {
 
   // Sort overall object
   const fullObjSorted = Object.fromEntries(
-    Object.entries(fullObj).sort(([key1], [key2]) => key1.localeCompare(key2))
+    Object.entries(fullObj).sort(([key1], [key2]) => key1.localeCompare(key2)),
   );
 
   const returnJson = JSON.stringify(fullObjSorted);
