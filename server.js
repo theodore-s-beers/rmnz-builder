@@ -37,9 +37,7 @@ app.post("/words", (req, res) => {
       // Sort object by key
       // It's better to pay the cost of doing this now
       const fileObjSorted = Object.fromEntries(
-        Object.entries(fileObj).sort(([key1], [key2]) =>
-          key1.localeCompare(key2),
-        ),
+        Object.entries(fileObj).sort(([key1], [key2]) => key1.localeCompare(key2)),
       );
 
       const returnJson = JSON.stringify(fileObjSorted);

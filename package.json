@@ -1,6 +1,7 @@
 {
   "name": "romanization",
   "version": "0.1.0",
+  "private": true,
   "description": "",
   "license": "MIT",
   "author": "Theo Beers",
@@ -9,23 +10,21 @@
   "scripts": {
     "build": "esbuild client.js --bundle --minify --sourcemap --outfile=bundle.min.js && tailwindcss -i base.css --minify -o bundle.min.css",
     "dev": "tailwindcss -i base.css --minify -o bundle.min.css --watch",
-    "format": "prettier --plugin prettier-plugin-tailwindcss --write .",
-    "lint": "eslint --fix .",
+    "format": "oxfmt",
+    "lint": "oxfmt --check && oxlint",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "axios": "^1.13.2",
-    "cors": "^2.8.5",
+    "axios": "^1.13.6",
+    "cors": "^2.8.6",
     "express": "^5.2.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "@tailwindcss/cli": "^4.1.17",
-    "esbuild": "^0.27.1",
-    "eslint": "^9.39.1",
-    "prettier": "^3.7.4",
-    "prettier-plugin-tailwindcss": "^0.7.2",
-    "tailwindcss": "^4.1.17"
+    "@tailwindcss/cli": "^4.2.2",
+    "esbuild": "^0.27.4",
+    "oxfmt": "^0.42.0",
+    "oxlint": "^1.57.0",
+    "tailwindcss": "^4.2.2"
   }
 }
