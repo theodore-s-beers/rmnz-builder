@@ -23,8 +23,8 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.2",
     "esbuild": "^0.28.0",
-    "oxfmt": "^0.44.0",
-    "oxlint": "^1.59.0",
+    "oxfmt": "^0.45.0",
+    "oxlint": "^1.60.0",
     "tailwindcss": "^4.2.2"
   }
 }
