@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.0",
-    "esbuild": "^0.28.0",
+    "esbuild": "^0.28.1",
     "oxfmt": "^0.53.0",
     "oxlint": "^1.68.0"
   }
